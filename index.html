@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://unal-partnering.github.io/anasayfa/">
     <meta property="og:type" content="website">
 
-    <link rel="icon" href="onlylogo.jpg">
+    <link rel="icon" href="onlylogo.png" type="image/png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -29,7 +29,7 @@
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .brand-font { font-family: 'Playfair Display', serif; }
         
-        /* LOGO WATERMARK AYARI */
+        /* LOGO WATERMARK AYARI (Arka Plandaki Silik Logo) */
         .watermark {
             position: fixed;
             top: 50%;
@@ -37,7 +37,7 @@
             transform: translate(-50%, -50%);
             width: 80vw;
             max-width: 600px;
-            opacity: 0.05;
+            opacity: 0.03; /* PNG olduğu için biraz daha şeffaf yaptık, çok şık duracak */
             z-index: 0;
             pointer-events: none;
         }
@@ -73,13 +73,13 @@
 </head>
 <body class="bg-[#050f1e] text-gray-300 antialiased relative">
 
-    <img src="logo.png" alt="" class="watermark">
+    <img src="onlylogo.png" alt="" class="watermark">
 
-    <nav class="fixed w-full z-50 top-0 left-0 bg-[#050f1e]/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <nav class="fixed w-full z-50 top-0 left-0 bg-[#050f1e]/90 backdrop-blur-md border-b border-white/5 transition-all duration-300 shadow-lg">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             
             <a href="#" class="text-xl font-bold tracking-[0.2em] text-[#d4af37] brand-font hover:opacity-80 transition flex items-center gap-3">
-                <img src="onlylogo.jpg" alt="UNAL Logo" class="h-10 w-auto object-contain drop-shadow-md"> 
+                <img src="onlylogo.png" alt="UNAL Logo" class="h-10 w-auto object-contain drop-shadow-md"> 
                 UNAL
             </a>
             
@@ -93,24 +93,31 @@
     </nav>
 
     <main class="hero-bg min-h-screen flex items-center justify-center pt-20 px-6 text-center relative z-10">
-        <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1200">
-            <h1 class="text-[#d4af37] text-6xl md:text-8xl brand-font mb-4 drop-shadow-lg">UNAL</h1>
-            <h2 class="text-[#d4af37] text-sm uppercase tracking-[0.4em] mb-8 font-semibold">Partnerlik & Danışmanlık</h2>
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center">
             
-            <h3 class="text-4xl md:text-6xl text-white mb-8 leading-tight brand-font">
-                Geleceğinizi <br>
-                <span class="italic text-[#d4af37]">Şekillendirin</span>
-            </h3>
-            
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12">
-                İster yeni bir fikri hayata geçiren bir <strong>girişimci</strong> olun, ister mevcut işini büyütmek isteyen bir <strong>işletme</strong>... 
-                Sürecin her adımında stratejik "Yol Arkadaşınız" oluyoruz.
-            </p>
+            <div class="mb-6" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="onlylogo.png" alt="UNAL Emblem" class="w-32 md:w-40 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+            </div>
 
-            <div class="flex justify-center gap-4">
-                <a href="#iletisim" class="bg-[#d4af37] text-[#050f1e] px-8 py-4 rounded font-bold hover:bg-[#b5952f] hover:scale-105 transition transform tracking-widest uppercase shadow-[0_0_20px_rgba(212,175,55,0.3)]">
-                    İlk Adımı Atın
-                </a>
+            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+                <h1 class="text-[#d4af37] text-6xl md:text-8xl brand-font mb-4 drop-shadow-lg tracking-wider">UNAL</h1>
+                <h2 class="text-[#d4af37] text-sm uppercase tracking-[0.4em] mb-8 font-semibold opacity-90">Partnerlik & Danışmanlık</h2>
+                
+                <h3 class="text-3xl md:text-5xl text-white mb-8 leading-tight brand-font">
+                    Geleceğinizi <br>
+                    <span class="italic text-[#d4af37]">Şekillendirin</span>
+                </h3>
+                
+                <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12">
+                    İster yeni bir fikri hayata geçiren bir <strong>girişimci</strong> olun, ister mevcut işini büyütmek isteyen bir <strong>işletme</strong>... 
+                    Sürecin her adımında stratejik "Yol Arkadaşınız" oluyoruz.
+                </p>
+
+                <div class="flex justify-center gap-4">
+                    <a href="#iletisim" class="bg-[#d4af37] text-[#050f1e] px-8 py-4 rounded font-bold hover:bg-[#b5952f] hover:scale-105 transition transform tracking-widest uppercase shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                        İlk Adımı Atın
+                    </a>
+                </div>
             </div>
         </div>
     </main>
